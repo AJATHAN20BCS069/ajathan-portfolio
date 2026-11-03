@@ -140,7 +140,7 @@ export default function Hero() {
               className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#9299A5] mb-8 pb-2"
             >
               <div className="flex items-center gap-1.5">
-                <span className="text-[#B6F36B] font-semibold">2+ Years</span>
+                <span className="text-[#B6F36B] font-semibold">3 Years</span>
                 <span>Experience</span>
               </div>
               <span className="text-[#252A32]">/</span>
