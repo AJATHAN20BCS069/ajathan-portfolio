@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #0B0D10;
+  --color-bg-surface: #12151A;
+  --color-bg-card: #151920;
+  --color-accent: #B6F36B;
+  --color-accent-hover: #A3E454;
+  --color-accent-muted: rgba(182, 243, 107, 0.12);
+  --color-accent-glow: rgba(182, 243, 107, 0.25);
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #9299A5;
+  --color-border-subtle: #252A32;
+  --color-border-hover: #373E4A;
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+:root {
+  color-scheme: dark;
+  --bg-base: #0B0D10;
+  --bg-surface: #12151A;
+  --accent: #B6F36B;
+  --text-primary: #F5F5F5;
+  --text-secondary: #9299A5;
+  --border: #252A32;
+
+  /* Custom Scrollbars */
+  scrollbar-color: #252A32 #0B0D10;
+  scrollbar-width: thin;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0B0D10;
+  color: #F5F5F5;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  background-color: #0B0D10;
+  color: #F5F5F5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0D10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252A32;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #373E4A;
+}
+
+/* Selection */
+::selection {
+  background: #B6F36B;
+  color: #0B0D10;
+}
+
+/* Accessibility Focus Outline */
+:focus-visible {
+  outline: 2px solid #B6F36B;
+  outline-offset: 3px;
+}
+
+/* Subtle Engineering Grid Background */
+.engineering-grid {
+  background-image: 
+    linear-gradient(to right, rgba(37, 42, 50, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 42, 50, 0.3) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.engineering-dots {
+  background-image: radial-gradient(rgba(37, 42, 50, 0.5) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Code badge font styling */
+.font-code {
+  font-family: var(--font-geist-mono), monospace;
+}

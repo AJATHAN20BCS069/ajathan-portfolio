@@ -1,0 +1,60 @@
+<svg width="600" height="700" viewBox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="600" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#151921"/>
+      <stop offset="50%" stop-color="#12151A"/>
+      <stop offset="100%" stop-color="#0E1015"/>
+    </linearGradient>
+    <radialGradient id="accentGlow" cx="50%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#B6F36B" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#B6F36B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#252A32" stroke-width="0.75" stroke-opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="700" rx="24" fill="url(#bgGrad)"/>
+  <rect width="600" height="700" rx="24" fill="url(#grid)"/>
+  <circle cx="300" cy="280" r="220" fill="url(#accentGlow)"/>
+
+  <!-- Engineering Architectural Guides -->
+  <circle cx="300" cy="270" r="160" stroke="#252A32" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle cx="300" cy="270" r="190" stroke="#252A32" stroke-width="1" stroke-dasharray="2 8" stroke-opacity="0.5"/>
+  <line x1="100" y1="270" x2="500" y2="270" stroke="#252A32" stroke-width="1" stroke-dasharray="3 6" stroke-opacity="0.4"/>
+  <line x1="300" y1="80" x2="300" y2="480" stroke="#252A32" stroke-width="1" stroke-dasharray="3 6" stroke-opacity="0.4"/>
+
+  <!-- Developer Silhouette Representation -->
+  <g transform="translate(175, 130)">
+    <!-- Head -->
+    <path d="M125 40C89.1 40 60 69.1 60 105C60 140.9 89.1 170 125 170C160.9 170 190 140.9 190 105C190 69.1 160.9 40 125 40Z" fill="#1C212B" stroke="#2D3440" stroke-width="2"/>
+    <!-- Head subtle inner glow -->
+    <circle cx="125" cy="105" r="50" fill="#252B37" opacity="0.4"/>
+    
+    <!-- Torso / Shoulders -->
+    <path d="M25 340C25 240 65 210 125 210C185 210 225 240 225 340H25Z" fill="#181D26" stroke="#2D3440" stroke-width="2"/>
+    <path d="M60 340C60 260 85 235 125 235C165 235 190 260 190 340H60Z" fill="#1E232E"/>
+    
+    <!-- Modern Tech Accent on Silhouette -->
+    <path d="M90 215L125 250L160 215" stroke="#B6F36B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  </g>
+
+  <!-- Engineering Crosshairs -->
+  <g stroke="#B6F36B" stroke-width="1.5" opacity="0.6">
+    <path d="M24 36H36M30 30V42"/>
+    <path d="M564 36H576M570 30V42"/>
+    <path d="M24 664H36M30 658V670"/>
+    <path d="M564 664H576M570 658V670"/>
+  </g>
+
+  <!-- Bottom Info Bar inside placeholder -->
+  <rect x="50" y="580" width="500" height="74" rx="14" fill="#0B0D10" fill-opacity="0.8" stroke="#252A32" stroke-width="1.2"/>
+  
+  <circle cx="85" cy="617" r="5" fill="#B6F36B"/>
+  <text x="105" y="612" fill="#F5F5F5" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" letter-spacing="0.02em">AJATHAN R</text>
+  <text x="105" y="632" fill="#9299A5" font-family="monospace" font-size="11" letter-spacing="0.05em">SOFTWARE ENGINEER • BACKEND</text>
+
+  <rect x="410" y="602" width="120" height="30" rx="6" fill="#151921" stroke="#2D3440" stroke-width="1"/>
+  <text x="470" y="621" fill="#B6F36B" font-family="monospace" font-size="11" text-anchor="middle" font-weight="600">REPLACE PHOTO</text>
+</svg>
